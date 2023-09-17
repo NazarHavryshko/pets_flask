@@ -1,0 +1,379 @@
+body{
+    background-color: #FEF9F9;
+}
+
+
+.img_background{
+    padding-left: 16px;
+    padding-right: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.top__info{
+    margin-bottom: 24px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    height: 38px;
+    padding-left: 10px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.add__new__pet__btn{
+    margin-left: auto; 
+    display: flex;
+    width: 99px;
+    height: 24px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    border-radius: 40px;
+    background: var(--unnamed, #54ADFF);
+}
+
+.add__new__pet__btn span{
+    color: var(--unnamed, #FEF9F9);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+}
+.infomation{
+    margin-top: 62px;
+    display: flex;
+    gap: 32px;
+}
+
+.info__right{
+    width: 821px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info__right__bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+
+
+
+.profile__inform{
+    width: 395px;
+    height: 535px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--unnamed, #FFF);
+    box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 25px;
+}
+
+.profile__photo__div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selected-image{
+    border-radius: 40px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    width: 182px;
+    height: 182px;
+}
+
+.user__photo__input{
+    display: none;
+}
+
+.profile__photo{
+    margin-top: 20px;
+    width: 182px;
+    height: 182px;
+}
+
+.profile__edit__photo{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--unnamed, #111);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 183.333% */
+    letter-spacing: 0.48px;
+}
+.new__photo{
+    width: 180px;
+    display: none;
+}
+
+.edit__photo__bnt{
+    border: 0px;
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 183.333% */
+    letter-spacing: 0.48px;
+}
+
+.profile__inform__change{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profile__inform__change div{
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+
+.inputs__name{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    align-items: center;
+    display: flex;
+}
+
+.inputs__form__div{
+    position: relative;
+}
+
+.inputs__form{
+    display: flex;
+    width: 231px;
+    height: 24px;
+    padding: 4px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    border: 1px solid var(--unnamed, #54ADFF);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.input__btn{
+    position: absolute;
+    top: 4px;
+    right: 12px;
+}
+
+.inputs__form:focus {
+    border: 1px solid var(--unnamed, #54ADFF);
+    outline: none; /* Видаляємо стандартний контур фокусу, особливо для кнопки */
+}
+
+.exit__save{
+    display: flex;
+    height: 24px;
+    margin-top: 13px;
+    align-items: flex-start;
+}
+
+.log__out{
+    display: flex;
+    gap: 12px;
+    color: var(--c, #888);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+}
+
+.save{
+    height: 24px;
+
+}
+.save__btn{
+    display: none;
+    color: var(--unnamed, #FEF9F9);
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.64px;
+    width: 99px;
+    height: 24px; 
+    border-radius: 40px;
+    background: var(--unnamed, #54ADFF);
+    border: 0px;
+}
+
+
+.pets__form{
+    width: 781px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--unnamed, #FFF);
+    box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
+    display: flex;
+    gap: 32px;
+    padding: 20px;
+}
+
+.pet__photo{
+    width: 161px;
+    height: 161px;
+    border-radius: 40px;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+}
+.pet__inform{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: var(--unnamed, #111);
+    font-family: Manrope;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.64px;
+    position: relative;
+}
+
+.pet__inform span span{
+    font-weight: 600; 
+}
+
+.delete__img{
+    position: absolute;
+    right: 0px;
+}
+
+@media (max-width: 1280px) {
+    .infomation{
+        flex-direction: column;
+    }
+
+    .profile__inform{
+        width: 664px;
+        height: 268px;
+        flex-direction: row;
+        gap: 71px;
+    }
+
+    .profile__photo__div{
+        order: 1;
+    }
+
+    .profile__inform__change{
+        margin-top: 20px;
+    }
+
+    .exit__save{
+        margin-top: 0px;
+    }
+
+    .info__right {
+        width: 704px;
+    }
+
+    .pets__form{
+        width: 664px;
+    }
+    .pet__inform{
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 764px) {
+
+    .infomation{
+        margin-top: 40px;
+    }
+
+    .profile__inform{
+        width: 264px;
+        height: 517px;
+        flex-direction: column;
+        gap: 22px;
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .profile__photo__div{
+        order: 0;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .inputs__name{
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.56px;
+    }
+
+    .profile__inform__change div{
+        gap: 5px;
+    }
+
+    .profile__inform__change{
+        margin-top: 0px;
+        font-weight: 600;
+        font-size: 14px;
+        letter-spacing: 0.56px;
+    }
+
+    .inputs__form{
+        width: 166px;
+        height: 20px;
+        padding: 4px 12px;
+    }
+
+    .exit__save{
+        margin-top: 13px;
+    }
+
+    .info__right {
+        width: 280px;
+        
+    }
+
+    .pets__form{
+        width: 240px;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .pet__inform{
+        font-size: 14px;
+    }
+
+    .top__info{
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.8px;
+        margin-bottom: 13px;
+    }
+
+    .pet__photo{
+        width: 240px;
+        height: 240px;
+    }
+}

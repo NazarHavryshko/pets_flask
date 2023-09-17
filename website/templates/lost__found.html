@@ -1,0 +1,153 @@
+{% extends "base.html" %}
+{% block title %}
+<link rel="stylesheet" href="static/style/lost__found.css">
+{% endblock %}
+
+{%  block content %}
+<div class="img_background">
+
+    <form class="add__pet" method="post">
+        <div class="personal__details__step">
+            <h4>Add lost pet</h4>
+            <div class="steps">
+                <div class="choose__option pass__step__color">
+                    <p>Choose option</p>
+                    <hr class="pass__step">
+                </div>
+                <div class="personal__details current__step__color">
+                    <p>Personal details</p>
+                    <hr class="current__step">
+                </div>
+                <div class="more__info next__step__color">
+                    <p>More info</p>
+                    <hr class="next__step">
+                </div>
+            </div>
+            <div class="div__untuts">
+                <div>
+                    <label class="title__input" for="title_of_add">Title of add</label>
+                    <input required type="text" id="title_of_add" class="title__of__add" name="title_of_add" placeholder="Type name pet">
+                </div>
+                <div>
+                    <label class="title__input"  for="pet_name">Pet's name</label>
+                    <input required type="text" id="pet_name" class="pet__name" name="pet_name" placeholder="Type name pet">
+                </div>
+                <div>
+                    <label class="title__input"  for="date_of_birth">Date of birth</label>
+                    <input required type="date" id="date_of_birth" class="date__of__birth" name="date_of_birth" placeholder="Type date of birth">
+                </div>
+                <div>
+                    <label class="title__input"  for="breed">Breed</label>
+                    <input required type="text" id="breed" class="breed" name="breed" placeholder="Type breed">
+                </div>
+            </div>
+            <input type="hidden" id="lost_found" name="type__option" value="lost_found">
+            <div class="btn__div btn__div__personal__details">
+                <button type="button" class="cancel__btn btn__defold">
+                    <a href="/add">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 12L20 12M4 12L10 6M4 12L10 18" stroke="#54ADFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <p>Back</p>
+                    </a>
+                </button>
+                <button type="button" class="next__btn next__btn__personal__detailsb btn__defold" id="nextBtnPersonalDetails">
+                    <p>Next</p>
+                    <img src="static/images/Group 462.png" class="Group462">
+                </button>
+            </div>
+        </div>
+
+
+        <div class="more__info__step not__active__el">
+            <h4>Add lost pet</h4>
+            <div class="steps">
+                <div class="choose__option pass__step__color">
+                    <p>Choose option</p>
+                    <hr class="pass__step">
+                </div>
+                <div class="personal__details pass__step__color">
+                    <p>Personal details</p>
+                    <hr class="pass__step">
+                </div>
+                <div class="more__info current__step__color">
+                    <p>More info</p>
+                    <hr class="current__step">
+                </div>
+            </div>
+            <div class="div__info__more">
+                <div>
+                    <div>
+                        <p class="sex__text">The Sex</p>
+                        <div class="choose__gender">
+                            <div class="gender" >
+                                <input required type="radio" id="female" name="gender" value="female">
+                                <label for="female">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 13C14.7614 13 17 10.7614 17 8C17 5.23858 14.7614 3 12 3C9.23858 3 7 5.23858 7 8C7 10.7614 9.23858 13 12 13ZM12 13L12 21M9 18L15 18" stroke="#F43F5E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Female</p>
+                                </label>
+                            </div>
+                            <div class="gender" >
+                                <input required type="radio" id="male" name="gender" value="male">
+                                <label for="male">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 11C9.23858 11 7 13.2386 7 16C7 18.7614 9.23858 21 12 21C14.7614 21 17 18.7614 17 16C17 13.2386 14.7614 11 12 11ZM12 11V3M12 3L16 7M12 3L8 7" stroke="#54ADFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <p>Male</p>
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="div__photo">
+                            <p class="load__text">Load the pet's image:</p>
+                            <label class="photo__pet" for="pet__photo" id="pet__photo__label">
+                                <svg class="photo__pet__svg" xmlns="http://www.w3.org/2000/svg" width="182" height="182" viewBox="0 0 182 182" fill="none">
+                                    <rect width="182" height="182" rx="40" fill="#CCE4FB"/>
+                                    <path d="M92 115V91M92 91V67M92 91H116.375M92 91H67.625" stroke="#54ADFF" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                                <img id="selectedImage" class="selected-image pet__photo__input" src="" alt="Selected Image">
+                            </label>
+                            <input required type="file" id="pet__photo" name="pet__photo" class="pet__photo__input">
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="more__info__inputs">
+                    <div>
+                        <label class="title__input" for="location">Location</label>
+                        <input type="text" id="location" class="location" name="location" placeholder="Type of location" required>
+                    </div>
+                    <div>
+                        <label class="title__input" for="comments">Comments</label>
+                        <div class="comments">
+                            <textarea id="comments" name="comments" rows="2" cols="33" placeholder="Type breed" required></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="btn__div btn__div__maore__inf ">
+                <button type="button" class="cancel__btn back__btn__personal__details btn__defold" id="cancelBntMI">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12L20 12M4 12L10 6M4 12L10 18" stroke="#54ADFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>Back</p>
+                </button>
+                <button type="submit" class="sent__information">
+                    <p>Done</p>
+                    <img src="static/images/Group 462.png" class="Group462">
+                </button>
+            </div>
+        </div>
+        
+
+
+    </form>
+</div>
+{% endblock %}
+
+
+{%  block jsconnect %}    
+<script src="static/js/lost__found.js"></script>
+{% endblock %}

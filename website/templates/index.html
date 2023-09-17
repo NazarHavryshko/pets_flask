@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %}
+<link rel="stylesheet" href="static/style/index.css">
+{% endblock %}
+
+{%  block content %}
+<div class="img_background">
+
+    <span class="hello"><p class="hello2">Take good care of your small pets</p></span>
+    <picture class="dogs">
+        <source media="(min-width: 1280px)" srcset="static/images/Frame.png">
+        <source media="(min-width: 768px)" srcset="static/images/pictures.png">
+        <source media="(min-width: 320px)" srcset="static/images/pictures2.png ">
+        <img src='static/images/Frame.png' alt="dogs">
+    </picture>
+   
+</div>
+{% endblock %}

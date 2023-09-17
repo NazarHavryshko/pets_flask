@@ -1,0 +1,81 @@
+body{
+    background-color: #FEF9F9;
+}
+
+.img_background{
+    background-image: url("../images/bg.png");
+    height: 770px;
+    display: flex;
+}
+
+.dogs {
+    width: 917px;
+    height: 670px;
+}
+  
+.hello{
+    width: 501px;
+    font-family: Manrope;
+    font-size: 68px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 130%; /* 88.4px */
+    padding-top: 188px;
+    padding-left: 16px;
+}
+
+.hello2{
+    position: absolute;
+    width: 501px;
+}
+
+
+
+
+@media (max-width: 1280px) {
+    .img_background{
+        background-image: url("../images/bg-2.png");
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .hello{
+        font-weight: 700;
+        line-height: 100px;
+        padding-top: 80px;
+        padding-left: 32px;
+    }
+    .hello2{
+        position: relative;
+        width: 588px;
+    }
+    .dogs {
+        width: 764px;
+        height: 818px;
+    }
+}
+
+
+@media (max-width: 764px) {
+    .img_background{
+        background-image: url("../images/bg-3.png");
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .hello{
+        width: 280px;
+        font-size: 32px;
+        line-height: 44px; 
+        padding-top: 64px;
+        padding-left: 20px;
+    }
+    .hello2{
+        position: relative;
+        width: 280px;
+    }
+    .dogs {
+        width: 318px;
+        height: 393.637px;
+    }
+}

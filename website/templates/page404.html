@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block title %}
+<link rel="stylesheet" href="static/style/page404.css">
+{% endblock %}
+
+{%  block content %}
+<div class="img_background">
+
+    <span class="message">Ooops! <br>This page not found :(</span>
+    <picture class="cat">
+        <source media="(min-width: 1280px)" srcset="static/images/cat404.png">
+        <source media="(min-width: 768px)" srcset="static/images/cat404t.png">
+        <source media="(min-width: 320px)" srcset="static/images/cat404m.png ">
+        <img src='static/images/cat404.png' alt="dogs">
+    </picture>
+    <a class="return__to__index" href="/">
+        <span>To main page</span>
+        <img src="static/images/Group 462.png" class="Group462">
+    </a>
+   
+</div>
+{% endblock %}
+

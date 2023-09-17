@@ -1,0 +1,158 @@
+body{
+    background-color: #FEF9F9;
+}
+
+
+.img_background{
+    background-image: url("../images/bg.png");
+    height: 770px;
+    display: flex;
+    justify-content: center;
+}
+.login_form{
+    width: 608px;
+    height: 600px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--unnamed, #FFF);
+    box-shadow: 3px 8px 14px 0px rgba(136, 198, 253, 0.19);
+    margin-top: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h4{
+    text-align: center;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 60px;
+    letter-spacing: 1.44px;
+}
+.form-control{
+    display: flex;
+    width: 426px;
+    height: 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    border: 1px solid var(--unnamed, #54ADFF);
+    color: var(--c, #888);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 24px */
+    letter-spacing: 0.64px;
+    padding: 12px 16px;
+}
+
+.form-control:focus {
+    border: 1px solid var(--unnamed, #54ADFF);
+    outline: none; /* Видаляємо стандартний контур фокусу, особливо для кнопки */
+}
+
+.na{
+    margin-top: 40px;
+}
+
+.em{
+    margin-top: 24px;
+}
+
+.password--div{
+    margin-top: 32px;
+    position: relative;
+}
+
+.button__password__show{
+    position: absolute;
+    top: 14px;
+    right: 12px;
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+    z-index: 5;
+}
+.registr_btn{
+    display: flex;
+    width: 458px;
+    height: 48px;
+    padding: 10px 28px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: var(--unnamed, #54ADFF);
+    color: var(--unnamed, #FFF);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.8px;
+    border: 0px;
+    margin-top: 40px;
+}
+.question{
+    color: var(--c, #888);
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.48px;
+    margin-top: 16px;
+}
+.question a{
+    color: var(--unnamed, #54ADFF);
+}
+
+
+@media (max-width: 1280px) {
+    .img_background{
+        background-image: url("../images/bg-2.png");
+        gap: 8px;
+    }
+
+}
+
+
+@media (max-width: 764px) {
+    .img_background{
+        background-image: url("../images/bg-3.png");
+        gap: 10px;
+    }
+
+    .login_form{
+        width: 280px;
+        height: 560px;
+        padding-top: 44px;
+    }
+
+    h4{
+    font-size: 24px;
+    padding-top: 40px;
+    }
+
+    .form-control{
+        width: 224px;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.64px;
+    }
+
+    .password--div{
+        margin-top: 24px;
+    }
+    
+    .registr_btn{
+        width: 256px;
+        font-size: 20px;
+    }
+    .question{
+        margin-top: 24px;
+    }
+}

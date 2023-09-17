@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}
+<link rel="stylesheet" href="static/style/add.css">
+{% endblock %}
+
+{%  block content %}
+<div class="img_background">
+    <div class="add__pet__main__form">
+        <h4>Add pet</h4>
+        <div class="steps">
+            <div class="choose__option current__step__color">
+                <p>Choose option</p>
+                <hr class="current__step">
+            </div>
+            <div class="personal__details next__step__color">
+                <p>Personal details</p>
+                <hr class="next__step">
+            </div>
+            <div class="more__info next__step__color">
+                <p>More info</p>
+                <hr class="next__step">
+            </div>
+        </div>
+        <fieldset class="chose__type">
+            <div class="radio__btn__div active">
+                <input type="radio" id="your__pet" name="type__add" value="your_pet" checked>
+                <label  class="radio__btn" for="your__pet">Your pet</label>
+            </div>
+            <div class="radio__btn__div">
+                <input type="radio" id="sell" name="type__add" value="sell">
+                <label  class="radio__btn" for="sell">Sell</label>
+            </div>
+            <div class="radio__btn__div">
+                <input type="radio" id="lost__found" name="type__add" value="lost_found">
+                <label class="radio__btn" for="lost__found">Lost / Found</label>
+            </div>
+            <div class="radio__btn__div">
+                <input type="radio" id="in__good__hands" name="type__add" value="in_good_hands">   
+                <label class="radio__btn" for="in__good__hands">In good hands</label>
+            </div>            
+        </fieldset>
+        <div class="btn__div">
+            <button type="button" class="cancel__btn btn__defold">
+                <a href="/profile">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 12L20 12M4 12L10 6M4 12L10 18" stroke="#54ADFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>cancel</p>
+                </a>
+            </button>
+            <button type="button" class="next__btn btn__defold" id="nextBtn">
+                <p>Next</p>
+                <img src="static/images/Group 462.png" class="Group462">
+            </button>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+{%  block jsconnect %}    
+<script src="static/js/add.js"></script>
+{% endblock %}

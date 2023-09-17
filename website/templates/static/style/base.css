@@ -1,0 +1,281 @@
+html{
+    box-sizing: border-box;
+}
+
+*,
+**::after,
+**::before{
+    box-sizing: inherit;
+}
+
+body{
+    color: #000;
+    font-family: 'Manrope', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    background-color: #FEF9F9;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.header__inner{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo{
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.menu__list{
+    display: flex;
+    gap: 20px;
+}
+
+.menu__list__link{
+    font-size: 20px;
+    line-height: 27px;
+    text-align: left;
+}
+
+.menu__btn{
+    display: none;
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.authentication{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.profile_auth{
+    display: flex;
+    gap: 12px;
+    color: var(--yellow, #FFC107);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.64px;
+    align-items: center;
+}
+
+.log_in{
+    width: 165px;
+    height: 40px;
+    border-radius: 40px;
+    border: 2px;
+    background-color: #FFC107;
+    gap: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color:white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.registration{
+    width: 165px;
+    height: 40px;
+    border: 2px solid #FFC107;
+    border-radius: 40px;
+    background-color: #FEF9F9;
+
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFC107;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Group462{
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 1280px) {
+    .container{
+        width: 768px;
+    }
+    header{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .header__inner{
+        width: 704px;
+    }
+    .header__menu__list{
+        display: none;
+    }
+    .menu__btn{
+        display: block;
+    }
+    .authentication{
+        margin-left: auto;
+    }
+    .menu{
+        order: 1;
+    }
+}
+
+
+/* TABLET MENU */
+.tablet{
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw; 
+    height: 100vh;
+    background-color: #FEF9F9;
+    z-index: 50;
+}
+.tablet__menu{
+    padding-top: 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 704px;
+    margin: 0 auto;
+}
+.tablet__menu_top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tablet__menu__list{
+    display: flex;
+    padding-top: 90px;
+    width: 704px;
+    background-color: #FEF9F9;
+    flex-direction: column;
+    gap: 60px 0;
+    align-items: center;
+}
+
+.tablet__menu__list__link{
+    font-size: 48px;
+}
+
+.menu__close__btn{
+    border: none;
+    background-color: transparent;
+    border-radius: 0px;
+}
+
+.menu--open{
+    display: flex;
+}
+
+.menu--open--container{
+    display: none;
+}
+
+.tablet__authentication{
+    display: none;
+
+}
+
+@media (max-width: 767px) {
+    .container{
+        width: 320px;
+    }
+    header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .header__inner{
+        width: 280px;
+    }
+    .header__menu__list{
+        display: none;
+    }
+    .menu__btn{
+        display: block;
+    }
+    .authentication{
+        display: none;
+    }
+    .menu{
+        order: 1;
+    }
+    .tablet__authentication{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        gap: 12px 0;
+        margin-left: 0px;
+    }
+    .tablet__menu{
+        width: 280px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tablet__menu__list{
+        width: 280px;
+        gap: 20px 0;
+        padding-top: 40px;
+    }
+    .tablet__menu__list__link{
+        font-size: 32px;
+    }
+}
+
+.before_messages{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.messages{
+    position: absolute;
+    padding: 5px 10px;
+    top: 5px;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    display: flex;
+    gap: 10px;
+    font-family: Manrope;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.close_messages{
+    background-color: transparent;
+    border: 0;
+}
